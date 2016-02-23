@@ -1,6 +1,6 @@
 Package.describe({
   name: 'shuttle:history',
-  version: '0.0.0',
+  version: '0.0.1',
   summary: 'Server logging of native and custom events with additional data.',
   git: 'https://github.com/meteor-shuttle/history',
   documentation: 'README.md'
