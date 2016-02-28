@@ -1,6 +1,6 @@
 Package.describe({
   name: 'shuttle:history',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Server logging of native and custom events with additional data.',
   git: 'https://github.com/meteor-shuttle/history',
   documentation: 'README.md'
@@ -15,11 +15,10 @@ Package.onUse(function(api) {
   
   api.use('dburles:collection-helpers@1.0.4');
   api.use('aldeed:collection2@2.9.0');
+  api.use('shuttle:graphs@0.0.0');
   api.use('shuttle:ref@0.0.0');
   
-  api.addFiles('History.js');
-  api.addFiles('helpers.js');
-  api.addFiles('Schema.js');
+  api.addFiles('history.js');
   
   api.export('Shuttle');
 });
