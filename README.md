@@ -6,7 +6,13 @@ Each document in the history will see only those who are entitled to it, because
 
 Documents can be inserted only on the server.
 
-### Applying
+## Using
+
+```
+meteor add shuttler:history
+```
+
+### Fields
 
 #### _target
 Reference to user to make a operation.

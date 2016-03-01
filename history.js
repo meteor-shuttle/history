@@ -1,21 +1,21 @@
-Shuttle.History = new Mongo.Collection('shuttle:history');
-Shuttle.History.attachGraph();
+Shuttler.History = new Mongo.Collection('shuttler:history');
+Shuttler.History.attachGraph();
 
-Shuttle.History.helpers({
+Shuttler.History.helpers({
 	object: function() {
-		return Shuttle.Ref(this._object);
+		return Shuttler.Ref(this._object);
 	}
 });
 
-Shuttle.History.deny({
+Shuttler.History.deny({
     insert: function() { return true; },
     update: function() { return true; },
     remove: function() { return true; }
 });
 
-Shuttle.History.attachSchema(new SimpleSchema({
+Shuttler.History.attachSchema(new SimpleSchema({
     _object: {
-        type: Shuttle.Ref.Schema
+        type: Shuttler.Ref.Schema
     },
     type: {
         type: String
